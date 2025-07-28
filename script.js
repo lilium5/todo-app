@@ -15,11 +15,15 @@ submit.addEventListener('click', function addItem() {
 
     const newNode = document.createElement('li');
     newNode.textContent = taskName;
-    
+
     myList.appendChild(newNode);
 
+    newNode.addEventListener('click', function() {
+        this.classList.toggle('checked')
+    });
+
     const newX = document.createElement('div');
-    newX.textContent = "X";
+    newX.textContent = "×";
     newX.classList.add('delete-btn');
 
     newX.addEventListener('click', function() {
@@ -30,3 +34,5 @@ submit.addEventListener('click', function addItem() {
     
     userInput.value = "";
 });
+
+
