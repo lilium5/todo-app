@@ -1,5 +1,6 @@
 body {
-    height: 100vh;
+    height: 100%;
+    font-family: monospace;
 }
 
 * {
@@ -45,22 +46,22 @@ ul li:hover {
 }
 
 ul li.checked {
-  background: #888;
-  color: #fff;
-  text-decoration: line-through;
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
 }
 
 ul li.checked::before { /* css only checkmark */
-  content: '';
-  position: absolute;
-  border-color: #fff;
-  border-style: solid;
-  border-width: 0 2px 2px 0;
-  top: 10px;
-  left: 16px;
-  transform: rotate(45deg);
-  height: 15px;
-  width: 7px;
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
 }
 
 .delete-btn {
@@ -72,4 +73,16 @@ ul li.checked::before { /* css only checkmark */
 
 .delete-btn:hover {
     background-color: red;
+}
+
+#user-input {
+    font-size: 18px;
+}
+
+#submit-btn {
+    font-size: 18px;
+}
+
+#clear-btn {
+     font-size: 18px;
 }

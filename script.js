@@ -36,3 +36,10 @@ submit.addEventListener('click', function addItem() {
 });
 
 
+    const clear = document.getElementById('clear-btn');
+    clear.addEventListener('click', function() {
+        if (confirm("Are you sure you want to clear all tasks?")) {
+            myList.innerHTML = "";
+        }
+    });
+
