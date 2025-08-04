@@ -68,6 +68,17 @@ ul li.checked::before { /* css only checkmark */
     width: 7px;
 }
 
+.edit-btn {
+    position: absolute;
+    right: 42.8334px;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.edit-btn:hover {
+    background-color: lightblue;
+}
+
 .delete-btn {
     position: absolute;
     right: 0;
@@ -76,7 +87,7 @@ ul li.checked::before { /* css only checkmark */
 }
 
 .delete-btn:hover {
-    background-color: red;
+    background-color: lightcoral;
 }
 
 #user-input {
@@ -91,8 +102,9 @@ ul li.checked::before { /* css only checkmark */
      font-size: 18px;
 }
 
-#quote-container {
+#quote,
+#author {
     display: flex;
     justify-content: center;
-    width: 50%;
+    margin-bottom: 1rem;
 }
